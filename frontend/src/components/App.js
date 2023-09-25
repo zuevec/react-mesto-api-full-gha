@@ -72,7 +72,7 @@ function App() {
     setIsLoggedIn(false);
   };
 
-  const { SECRET_KEY = 'mesto-test' } = process.env;
+  
 
   const checkToken = async () => {
     const token = localStorage.getItem('jwt');
@@ -97,6 +97,7 @@ function App() {
   };
 
   useEffect(() => {
+    const { SECRET_KEY = 'mesto-test' } = process.env;
     checkToken(SECRET_KEY);
   }, []);
 
