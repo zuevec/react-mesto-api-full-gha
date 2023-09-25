@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3003'
+const baseUrl = 'http://localhost:3000'
 
 const handleResponse = async (data) => {
   const res = await data.json();

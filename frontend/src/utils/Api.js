@@ -88,5 +88,5 @@ class Api {
 }
 
 export const api = new Api({
-  address: 'http://localhost:3003',
+  address: 'http://backend.zuevec.nomoredomainsrocks.ru/:3000',
 });
