@@ -1,4 +1,4 @@
-const baseUrl = 'http://backend.zuevec.nomoredomainsrocks.ru/'
+const baseUrl = 'https://backend.zuevec.nomoredomainsrocks.ru/'
 
 const handleResponse = async (data) => {
   const res = await data.json();
