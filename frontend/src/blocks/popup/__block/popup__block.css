@@ -1,0 +1,17 @@
+.popup__block {
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgb(0 0 0 / 15%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 34px 36px 37px;
+  position: relative;
+  width: 430px;
+}
+
+@media screen and (max-width: 425px) {
+  .popup__block {
+    width: calc(100% - 38px);
+    padding: 25px 22px;
+  }
+}

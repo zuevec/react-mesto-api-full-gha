@@ -1,0 +1,12 @@
+.header__popup-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  text-align: right;
+
+  color: #ffffff;
+  margin: 40px 0 18px 0;
+}

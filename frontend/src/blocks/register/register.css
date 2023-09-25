@@ -1,0 +1,13 @@
+.register {
+  width: 358px;
+
+  margin: 60px auto;
+
+  height: 550px;
+}
+
+@media screen and (max-width: 374px) {
+  .register {
+    width: 260px;
+  }
+}

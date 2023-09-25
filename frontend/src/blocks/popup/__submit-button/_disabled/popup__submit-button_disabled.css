@@ -1,0 +1,16 @@
+.popup__submit-button_disabled {
+  opacity: 0.2;
+  cursor: default;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.popup__submit-button_disabled:hover {
+  opacity: 0.2;
+}
