@@ -97,7 +97,7 @@ function App() {
   };
 
   useEffect(() => {
-    checkToken();
+    checkToken(SECRET_KEY);
   }, []);
 
   const handleCardLike = async (card) => {
