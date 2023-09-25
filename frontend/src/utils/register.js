@@ -38,6 +38,7 @@ export async function login(password, email) {
 }
 
 export async function auth(token) {
+  // console.log(token)
   const data = await fetch(`${baseUrl}/users/me`, {
     method: 'GET',
     headers: {

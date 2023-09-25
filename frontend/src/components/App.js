@@ -72,11 +72,15 @@ function App() {
     setIsLoggedIn(false);
   };
 
+  const { SECRET_KEY = 'mesto-test' } = process.env;
+
   const checkToken = async () => {
     const token = localStorage.getItem('jwt');
+    console.log(SECRET_KEY)
     if (token) {
       try {
-        const { email } = await auth(token)
+        const {email} = await auth(token)
+        
     .then((result) => {
       return result;
     })
