@@ -36,6 +36,12 @@ mongoose.connect(DB_URL, {
 
 app.use(requestLogger);
 
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 app.use('/signup', require('./routes/signup'));
 app.use('/signin', require('./routes/signin'));
 
