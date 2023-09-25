@@ -11,6 +11,6 @@
 
 IP-адрес 158.160.32.194
 
-Frontend https://...
+Frontend https://zuevec.nomoredomainsrocks.ru/
 
-Backend https://...
+Backend https://backend.zuevec.nomoredomainsrocks.ru/
