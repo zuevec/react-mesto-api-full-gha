@@ -41,7 +41,7 @@ const InfoToolTip = ({ onClose, isOpen, isOk, error }) => {
             />
             <p className="popup__text">
               {error.message ??
-                'Что-то пошло не так!\n' + 'Попробуйте ещё раз.'}
+                'Что-то пошло не так! Попробуйте ещё раз.'}
             </p>
           </>
         )}
