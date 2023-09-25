@@ -76,7 +76,7 @@ function App() {
 
   const checkToken = async () => {
     const token = localStorage.getItem('jwt');
-    console.log(SECRET_KEY)
+
     if (token) {
       try {
         const {email} = await auth(token)
@@ -97,8 +97,7 @@ function App() {
   };
 
   useEffect(() => {
-    const { SECRET_KEY = 'mesto-test' } = process.env;
-    checkToken(SECRET_KEY);
+    checkToken();
   }, []);
 
   const handleCardLike = async (card) => {
