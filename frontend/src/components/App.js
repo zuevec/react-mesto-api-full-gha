@@ -67,7 +67,7 @@ function App() {
   };
 
   const logout = () => {
-    localStorage.removeItem('token');
+    localStorage.removeItem('jwt');
     setUserEmail('');
     setIsLoggedIn(false);
   };
