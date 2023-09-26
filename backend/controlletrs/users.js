@@ -27,7 +27,7 @@ module.exports.createUser = (req, res, next) => {
     }))
     .catch((err) => {
       if (err.code === 11000) {
-        next(new ConflictError(`Пользователь с email: ${email} уже`));
+        next(new ConflictError(err.message));
       } else if (err instanceof mongoose.Error.ValidationError) {
         next(new BadRequestError(err.message));
       } else {

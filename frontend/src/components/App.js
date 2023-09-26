@@ -47,8 +47,8 @@ function App() {
     } catch (e) {
       console.warn(e);
       setIsOk(false);
-      setError(e.error);
       setIsInfoTooltipOpen(true);
+      setError(e);
     }
   };
 
