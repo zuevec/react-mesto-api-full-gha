@@ -24,7 +24,7 @@ npm-debug.log*
 # Dependency directory
 node_modules
 .env
-build
+/build
 # Optional npm cache directory
 .npm
 /.pnp
@@ -33,3 +33,5 @@ build
 # Optional REPL history
 .idea
 .vscode
+
+
