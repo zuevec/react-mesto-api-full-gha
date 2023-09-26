@@ -98,8 +98,9 @@ function App() {
 
   useEffect(() => {
     checkToken();
+    fetchData();
     fetchCards();
-}, [])
+}, [isLoggedIn])
 
   const handleCardLike = async (card) => {
     const isLiked = card.likes.some(i => i === currentUser._id);
